@@ -68,6 +68,77 @@
 
 :root{--swiper-navigation-size:44px}
 
+element.style {
+    transform: translate3d(0px, 0px, 0px);
+    transition-duration: 0ms;
+}
+.swiper-slide .title {
+    font-size: 41px;
+    font-weight: 300;
+}
+div {
+    display: block;
+}
+.swiper-slide {
+    font-size: 18px;
+    color: black;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 40px 60px;
+}
+
+element.style {
+    transform: translate3d(0px, 0px, 0px);
+    transition-duration: 0ms;
+}
+.swiper-slide .subtitle {
+    font-size: 21px;
+}
+div {
+    display: block;
+}
+
+element.style {
+    transform: translate3d(0px, 0px, 0px);
+    transition-duration: 0ms;
+}
+.swiper-slide .text {
+    font-size: 14px;
+    max-width: 400px;
+    line-height: 1.3;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+.swiper-slide {
+    font-size: 18px;
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 40px 60px;
+}
+Style Attribute {
+    --swiper-navigation-color: #fff;
+    --swiper-pagination-color: #fff;
+}
+.swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
 .swiper-button-next,.swiper-button-prev{position:absolute;top:50%;width:calc(var(--swiper-navigation-size)/ 44 * 27);height:var(--swiper-navigation-size);margin-top:calc(0px - (var(--swiper-navigation-size)/ 2));z-index:10;cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--swiper-navigation-color,var(--swiper-theme-color))}
 
 .swiper-button-next.swiper-button-disabled,.swiper-button-prev.swiper-button-disabled{opacity:.35;cursor:auto;pointer-events:none}
@@ -211,3 +282,4 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 .swiper-container-flip .swiper-slide-active,.swiper-container-flip .swiper-slide-active .swiper-slide-active{pointer-events:auto}
 
 .swiper-container-flip .swiper-slide-shadow-bottom,.swiper-container-flip .swiper-slide-shadow-left,.swiper-container-flip .swiper-slide-shadow-right,.swiper-container-flip .swiper-slide-shadow-top{z-index:0;-webkit-backface-visibility:hidden;backface-visibility:hidden}
+
