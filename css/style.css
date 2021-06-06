@@ -1,28 +1,26 @@
-html,
-body {
-    overflow-x: hidden; /* Prevent scroll on narrow devices */
-}
+
 body {
     padding-top: 100px;
 }
+
+
 footer {
     padding: 30px 0;
 }
 
-body {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-}
 
+
+.fade {
+  margin: 50px;
+  padding: 50px;
+  background-color: lightgreen;
+  opacity: 1;
+}
 
 /* Slider wrapper*/
 .css-slider-wrapper {
   display: block;
   background: #FFF;
-  overflow: hidden;
   position: absolute;
   left: 0;
   right: 0;
@@ -53,7 +51,6 @@ body {
   transition: -webkit-transform 1600ms, transform 1600ms;
   -webkit-transform: scale(1);
   transform: scale(1);
-  overflow: hidden;
 }
 
 /* each slide backgound color */  
@@ -232,63 +229,24 @@ article, aside, footer, header, nav, section {
 section {
     display: block;
 }
-body {
-    background-color: white;
-    font-family: "muli-regular", sans-serif;
-    font-size: 1.6rem;
-    line-height: 1.875;
-    color: #767676;
-    margin: 0;
-    padding: 0;
+
+#container
+{
+    height:2000px;    
 }
 
-*, *::before, *::after {
-    box-sizing: inherit;
-}
-*, *::before, *::after {
-    box-sizing: inherit;
-}
-
-@media only screen and (max-width: 1024px){
-.about-intro {
-    max-width: 800px;
-    text-align: center;
-}}
-
-.about-intro {
-    padding-top: 5rem;
-    padding-bottom: 3.6rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
-}
-@media only screen and (max-width: 600px){
-.row {
-    padding-left: 25px;
-    padding-right: 25px;
-}}
-@media only screen and (max-width: 768px){
-.row {
-    width: auto;
-    padding-left: 30px;
-    padding-right: 30px;
-}}
-.row {
-    width: 94%;
-    max-width: 1170px;
-    margin: 0 auto;
+#container DIV
+{ 
+    margin:50px; 
+    padding:50px; 
+    background-color:lightgreen; 
 }
 
+.hideme
+{
+    opacity:0;
+}
 
-@media only screen and (max-width: 1024px) { 
-  .about-intro {
-    max-width: 800px;
-    text-align: center;
-  }}
-  .about-intro h1::before {
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-  }
   .about-intro [class*="col-"] {
     width: 100% !important;
     float: none !important;
@@ -297,7 +255,7 @@ body {
     margin-right: 0;
   }
 #about {
-    overflow: scroll;
+
     padding-top: 50rem;
   padding-bottom: 3.6rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.07);
