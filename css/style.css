@@ -41,22 +41,31 @@ body {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
+
 /* each slide backgound color */  
 .slide1 {
-  background: #00bcd7;
   left: 0;
+  background-image: url(/images/black-face-hill.jpeg);
+  position: absolute;
+
 }
 .slide2 {
-  background: #009788;
-  left: 100%
+  background-image: url(/images/brown-calf.jpeg);
+  left: 100%;
+    position: absolute;
+
 }
 .slide3 {
-  background: #ff5608;
-  left: 200%
+      background-image: url(/images/heather.jpg);
+left: 200%;
+  position: absolute;
+
 }
 .slide4 {
-  background: #607d8d;
+  background-image: url(/images/thrush.jpeg);
   left: 300%;
+    position: absolute;
+
 }
 .slider > div {
   text-align: center;
