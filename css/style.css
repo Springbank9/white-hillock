@@ -51,6 +51,7 @@ footer {
   transition: -webkit-transform 1600ms, transform 1600ms;
   -webkit-transform: scale(1);
   transform: scale(1);
+  overflow-x: visible;
 }
 
 /* each slide backgound color */  
@@ -219,45 +220,3 @@ left: 200%;
 }
 }
 
-article, aside, footer, header, nav, section {
-    display: block;
-}
-*, *::before, *::after {
-    box-sizing: inherit;
-}
-
-section {
-    display: block;
-}
-
-#container
-{
-    height:2000px;    
-}
-
-#container DIV
-{ 
-    margin:50px; 
-    padding:50px; 
-    background-color:lightgreen; 
-}
-
-.hideme
-{
-    opacity:0;
-}
-
-  .about-intro [class*="col-"] {
-    width: 100% !important;
-    float: none !important;
-    clear: both !important;
-    margin-left: 0;
-    margin-right: 0;
-  }
-#about {
-
-    padding-top: 50rem;
-  padding-bottom: 3.6rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
-position: absolute;
-}
