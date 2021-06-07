@@ -17,10 +17,20 @@ footer {
   opacity: 1;
 }
 
+
+#header {
+    position: absolute;
+    bottom: 0;
+    
+    width: 100%; 
+    overflow: auto; 
+    height: 768px; 
+}
 /* Slider wrapper*/
 .css-slider-wrapper {
   display: block;
   background: #FFF;
+  overflow: hidden;
   position: absolute;
   left: 0;
   right: 0;
@@ -31,11 +41,11 @@ footer {
 .slider {
   width: 100%;
   height: 100%;
-  background: brown;
+  background: red;
   position: absolute;
   left: 0;
   top: 0;
-  opacity: 0.8;
+  opacity: 0.7;
   z-index: 0;
   display: flex;
   display: -webkit-flex;
@@ -51,33 +61,23 @@ footer {
   transition: -webkit-transform 1600ms, transform 1600ms;
   -webkit-transform: scale(1);
   transform: scale(1);
-  overflow-x: visible;
 }
-
 /* each slide backgound color */  
 .slide1 {
   left: 0;
   background-image: url(/images/black-face-hill.jpeg);
-  position: absolute;
-
 }
 .slide2 {
   background-image: url(/images/brown-calf.jpeg);
   left: 100%;
-    position: absolute;
-
 }
 .slide3 {
-      background-image: url(/images/heather.jpg);
+  background-image: url(/images/heather.jpg);
 left: 200%;
-  position: absolute;
-
 }
 .slide4 {
   background-image: url(/images/thrush.jpeg);
   left: 300%;
-    position: absolute;
-
 }
 .slider > div {
   text-align: center;
@@ -220,3 +220,38 @@ left: 200%;
 }
 }
 
+body{
+  margin: 0;
+  background-color: #ececec;
+}
+.content{
+    padding-top: 50rem;
+  height: 100vh;
+  width: 100%;
+  background-color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  position: relative;
+  margin-bottom: 50vh;
+}
+.footer{
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: #f1f1f1;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+#main{
+    min-height: 768px;
+    overflow: auto;
+    position: relative;
+}
