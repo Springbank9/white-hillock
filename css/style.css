@@ -1,41 +1,28 @@
+html, body {
+    height: 100%;
+}
 
 body {
-    padding-top: 100px;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
-
-footer {
-    padding: 30px 0;
-}
-
-
-
-.fade {
-  margin: 50px;
-  padding: 50px;
-  background-color: lightgreen;
-  opacity: 1;
-}
-
-
-#header {
-    position: absolute;
-    bottom: 0;
-    
-    width: 100%; 
-    overflow: auto; 
-    height: 768px; 
+.navbar {
+    position: fixed;
 }
 /* Slider wrapper*/
 .css-slider-wrapper {
   display: block;
   background: #FFF;
-  overflow: hidden;
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
+  overflow-x: hidden;
 }
 /* Slider */
 .slider {
@@ -45,7 +32,7 @@ footer {
   position: absolute;
   left: 0;
   top: 0;
-  opacity: 0.7;
+  opacity: 1;
   z-index: 0;
   display: flex;
   display: -webkit-flex;
@@ -61,22 +48,24 @@ footer {
   transition: -webkit-transform 1600ms, transform 1600ms;
   -webkit-transform: scale(1);
   transform: scale(1);
+    overflow-x: hidden;
+
 }
 /* each slide backgound color */  
 .slide1 {
+  background: #00bcd7;
   left: 0;
-  background-image: url(/images/black-face-hill.jpeg);
 }
 .slide2 {
-  background-image: url(/images/brown-calf.jpeg);
-  left: 100%;
+  background: #009788;
+  left: 100%
 }
 .slide3 {
-  background-image: url(/images/heather.jpg);
-left: 200%;
+  background: #ff5608;
+  left: 200%
 }
 .slide4 {
-  background-image: url(/images/thrush.jpeg);
+  background: #607d8d;
   left: 300%;
 }
 .slider > div {
@@ -113,7 +102,7 @@ left: 200%;
 }
 /* Next and Preive arrow */ 
 .control {
-  position: absolute;
+  position: fixed;
   top: 50%;
   width: 50px;
   height: 50px;
@@ -220,38 +209,50 @@ left: 200%;
 }
 }
 
-body{
-  margin: 0;
-  background-color: #ececec;
-}
-.content{
-    padding-top: 50rem;
-  height: 100vh;
-  width: 100%;
-  background-color: #FFF;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
-  position: relative;
-  margin-bottom: 50vh;
-}
-.footer{
-  height: 50vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
-  color: #f1f1f1;
-  background-color: #000;
-  position: absolute;
-  bottom: 0;
-  z-index: -1;
+.content {
+    padding-top: 40rem;
+
 }
 
 #main{
     min-height: 768px;
     overflow: auto;
-    position: relative;
+    position: absolute;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("/images/heather.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+#container {
+    height:2000px;   
+    padding-top: 40rem; 
+}
+
+#container DIV
+{ 
+    margin:50px; 
+    padding:50px; 
+    background-color:lightgreen; 
+}
+
+.hideme
+{
+    opacity:0;
 }
