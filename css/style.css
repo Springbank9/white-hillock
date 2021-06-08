@@ -11,21 +11,24 @@ body {
 }
 
 .navbar {
-    position: fixed;
+    position: absolute;
+    background-color: transparent;
 }
 /* Slider wrapper*/
-.css-slider-wrapper {
+.css-slider-wrapper  {
   display: block;
   background: #FFF;
-  position: absolute;
-  left: 0;
+min-height: 768px;
+    overflow: auto;
+    position: relative;
+      left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   overflow-x: hidden;
 }
 /* Slider */
-.slider {
+.slider  {
   width: 100%;
   height: 100%;
   background: red;
@@ -51,13 +54,15 @@ body {
     overflow-x: hidden;
 
 }
+
 /* each slide backgound color */  
 .slide1 {
-  background: #00bcd7;
+  background-image: url(/images/black-face-hill.jpeg);
   left: 0;
+  
 }
 .slide2 {
-  background: #009788;
+  background-image: url(/images/heather.jpg);
   left: 100%
 }
 .slide3 {
@@ -209,6 +214,11 @@ body {
 .slider .button {
   padding: 0 15px;
 }
+}
+
+.card {
+    padding: 0;
+    margin: 20px 10px 10px 10px;
 }
 
 .content {
