@@ -82,6 +82,8 @@ body {
   -webkit-transform: translateX(500px);
   transform: translateX(500px);
 }
+
+
 .slider .button {
   color: #FFF;
   padding: 5px 30px;
